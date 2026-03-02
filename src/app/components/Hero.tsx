@@ -9,7 +9,7 @@ export default function Hero() {
     <section className="container  h-screen bg-[#F9FAFB]">
       <div className="relative max-w-7xl mx-auto h-full px-6 flex flex-col">
 
-        <div className="relative sm:text-center md:text-left lg:text-left z-10 pt-24 flex-100 max-w-[620px]">
+        <div className="relative sm:text-center sm:text-wrap md:text-left lg:text-left z-10 pt-24 flex-100 max-w-[620px]">
           <h1 className="text-[36px] leading-[46px] font-semibold text-[#0F172A]">
             {t("Hero", "title")}
           </h1>
@@ -42,7 +42,7 @@ export default function Hero() {
             loop
             muted
             playsInline
-            className="w-[1080px] backdrop-blur-[37px] bg-white/30 absolute object-contain"
+            className="w-[1080px] max-w-full backdrop-blur-[37px] bg-white/30 absolute object-contain"
           />
         </div>
 
