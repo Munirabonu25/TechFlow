@@ -54,7 +54,7 @@ export default function CTA() {
                             {t("CTA", "description")}
                         </p>
 
-                        <div className="mt-10 flex gap-4 items-center">
+                        <div className="mt-10 flex flex-wrap lg:flex-nowrap md:flex-nowrap gap-4 items-center">
                             <Link
                                 href="#"
                                 className="inline-flex items-center justify-center px-8 py-3.5 rounded-full text-[15px] text-nowrap font-semibold text-white bg-[#1C68E1] hover:bg-blue-700 transition-colors"
