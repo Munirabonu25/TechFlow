@@ -6,10 +6,10 @@ export default function Hero() {
   const { t } = useLanguage();
 
   return (
-    <section className="container  h-screen bg-[#F9FAFB]">
+    <section className="container min-h-screen md:h-screen bg-[#F9FAFB]">
       <div className="relative max-w-7xl mx-auto h-full px-6 flex flex-col">
 
-        <div className="relative sm:text-center md:text-left lg:text-left z-10 pt-24 flex-100 max-w-[620px]">
+        <div className="relative sm:text-center md:text-left lg:text-left z-10 pt-16 md:pt-24 flex-100 max-w-[620px]">
           <h1 className="text-[36px] leading-[46px] font-semibold text-[#0F172A]">
             {t("Hero", "title")}
           </h1>
@@ -35,14 +35,14 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="flex-1 flex items-end justify-end backdrop-blur-[37px] bg-white/30 ">
+        <div className="flex-1 flex items-end justify-end relative">
           <video
             src="/videocar.mp4"
             autoPlay
             loop
             muted
             playsInline
-            className="w-[1080px] backdrop-blur-[37px] bg-white/30 absolute object-contain"
+            className="w-full max-w-[1080px] object-cover absolute object-contain"
           />
         </div>
 
