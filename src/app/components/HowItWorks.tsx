@@ -60,7 +60,7 @@ export default function HowItWorks() {
     ];
 
     return (
-        <section id="workflow" className="py-24 bg-[#0B0F19]">
+        <section id="workflow" className="py-24 bg-[#030712]">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center max-w-2xl mx-auto mb-20 text-white">
                     <h2 className="text-[32px] sm:text-[36px] font-bold tracking-tight">
