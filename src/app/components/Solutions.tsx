@@ -38,7 +38,7 @@ export default function Solutions() {
                     {t("Solutions", "solution2_desc")}
                 </p>
             </div>
-            <div className="mt-auto absolute bottom-0 right-0 left-0 flex justify-end items-end pointer-events-none -mb-2">
+            <div className="mt-4 lg:mt-0 lg:absolute lg:right-0 lg:bottom-0 lg:top-6 w-full lg:w-[65%] flex items-end justify-end pointer-events-none">
                 <Image
                     src={solution2}
                     alt={t("Solutions", "solution2")}
