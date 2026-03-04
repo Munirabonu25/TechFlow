@@ -103,19 +103,26 @@ export default function HowItWorks() {
                     ))}
                 </div>
 
-                <div className="lg:hidden grid sm:grid-cols-2 gap-10 relative">
+                <div className="lg:hidden flex flex-col sm:grid sm:grid-cols-2 gap-16 sm:gap-10 relative items-center">
                     {steps.map((step) => (
-                        <div key={step.id} className="flex flex-col items-center text-center">
-                            <div className={`w-14 h-14 rounded-2xl flex items-center justify-center mb-6`}>
+                        <div key={step.id} className="relative flex flex-col items-center text-center w-full">
+                          
+                            <div className="absolute -top-1 left-1/2 -translate-x-1/2 w-[250px] h-[180px] overflow-hidden pointer-events-none sm:hidden">
+                                <svg fill="none" className={`w-full h-[100%] ${step.strokeColor} opacity-50`} stroke="currentColor" strokeWidth="2" strokeDasharray="6 6">
+                                    <ellipse cx="50%" cy="100%" rx="50%" ry="85%" />
+                                </svg>
+                            </div>
+
+                            <div className={`relative z-10 w-14 h-14 rounded-2xl flex items-center justify-center mb-6`}>
                                 {step.icon}
                             </div>
-                            <div className="w-[26px] h-[26px] mb-4 rounded-full bg-[#374151] flex items-center justify-center border-2 border-[#1E293B]">
+                            <div className="relative z-10 w-[26px] h-[26px] mb-4 rounded-full bg-[#374151] flex items-center justify-center border-2 border-[#1E293B]">
                                 <span className="text-white text-[11px] font-semibold">{step.id}</span>
                             </div>
-                            <h3 className="text-white font-semibold text-lg mb-2">
+                            <h3 className="relative z-10 text-[#F9FAFB] font-semibold text-[20px] tracking-wide mb-2 mt-2">
                                 {t("Workflow", step.titleKey)}
                             </h3>
-                            <p className="text-[#8B93A5] text-sm max-w-[200px]">
+                            <p className="relative z-10 text-[#99A1AF] text-[16px] leading-relaxed max-w-[180px]">
                                 {t("Workflow", step.descKey)}
                             </p>
                         </div>
