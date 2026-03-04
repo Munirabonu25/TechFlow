@@ -32,14 +32,14 @@ export default function Hero() {
           <div className="mt-10 flex md:flex-row flex-col gap-5 sm:flex-col ">
             <Link
               href="#"
-              className="bg-[#1463E1] text-center hover:bg-[#1D4ED8] text-white px-8 py-4 rounded-full font-medium shadow-lg transition"
+              className="bg-[#1463E1] text-center hover:bg-[#1D4ED8] text-white px-6 py-3 rounded-full font-medium shadow-lg transition"
             >
               {t("Hero", "button1")}
             </Link>
 
             <Link
               href="#"
-              className="bg-white text-center border border-gray-200 px-8 py-4 rounded-full font-medium hover:bg-gray-50 transition"
+              className="bg-white text-center px-6 py-3 rounded-full font-medium hover:bg-gray-50 transition"
             >
               {t("Hero", "button2")}
             </Link>

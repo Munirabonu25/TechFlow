@@ -2,7 +2,8 @@
 import Link from "next/link";
 import { useState } from "react";
 import { useLanguage, LOCALE_OPTIONS, Locale } from "../context/LanguageContext";
-
+import Image from "next/image";
+import globe from "../../../public/globus.svg";
 export default function Navbar() {
     const [mobileOpen, setMobileOpen] = useState(false);
     const { locale, setLocale, t } = useLanguage();
@@ -15,21 +16,21 @@ export default function Navbar() {
     ];
 
     return (
-        <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md ">
+        <nav className="fixed top-0 left-0 right-0 z-50 bg-[#F9FAFB] ">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
                 <div className="flex items-center justify-between h-[72px]">
 
                     <Link href="/" className="flex items-center gap-2">
-                        <span className="text-[22px] font-semibold text-[#0F172A] tracking-tight">TechFlow</span>
+                        <span className="text-[22px] font-medium text-[#030712] tracking-tight">TechFlow</span>
                     </Link>
 
-                    
-                    <div className="hidden lg:flex items-center gap-8 bg-white border border-gray-100 shadow-sm px-6 py-2 rounded-full absolute left-1/2 -translate-x-1/2">
+
+                    <div className="hidden lg:flex items-center gap-8 bg-white border border-[#D1D5DC] px-6 py-2 rounded-full absolute left-1/2 -translate-x-1/2">
                         {navItems.map((item) => (
                             <Link
                                 key={item.id}
                                 href={`#${item.id}`}
-                                className="text-sm text-gray-600 hover:text-blue-600 font-medium transition-colors"
+                                className="text-sm text-[#030712] hover:text-blue-600 font-medium transition-colors"
                             >
                                 {t("Navbar", item.nameKey)}
                             </Link>
@@ -38,24 +39,12 @@ export default function Navbar() {
 
                     <div className="hidden lg:flex items-center gap-5">
                         <div className="relative">
-                            <svg
-                                className="w-4 h-4 text-gray-400 absolute left-3 top-1/2 -translate-y-1/2 pointer-events-none"
-                                fill="none"
-                                stroke="currentColor"
-                                viewBox="0 0 24 24"
-                            >
-                                <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth={2}
-                                    d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                                />
-                            </svg>
+                           <Image src="/globe.svg" alt="globe" width={18} height={18} className="absolute left-2.5 top-1/2 -translate-y-1/2"/>
                             <select
                                 id="desktop-language-select"
                                 value={locale}
                                 onChange={(e: React.ChangeEvent<HTMLSelectElement>) => setLocale(e.target.value as Locale)}
-                                className="appearance-none bg-white rounded-full pl-9 pr-8 py-2 text-sm font-medium text-gray-700 cursor-pointer focus:outline-none "
+                                className="appearance-none bg-[#F9FAFB] rounded-full pl-9 pr-8 py-2 text-sm font-medium text-gray-700 cursor-pointer focus:outline-none "
                             >
                                 {LOCALE_OPTIONS.map((opt) => (
                                     <option key={opt.code} value={opt.code}>
@@ -64,7 +53,7 @@ export default function Navbar() {
                                 ))}
                             </select>
                             <svg
-                                className="w-4 h-4 text-gray-400 absolute right-2.5 top-1/2 -translate-y-1/2 pointer-events-none"
+                                className="w-4 h-4 text-[#030712] absolute right-2.5 top-1/2 -translate-y-1/2 pointer-events-none"
                                 fill="none"
                                 stroke="currentColor"
                                 viewBox="0 0 24 24"

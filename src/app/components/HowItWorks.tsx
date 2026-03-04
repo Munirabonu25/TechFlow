@@ -62,11 +62,11 @@ export default function HowItWorks() {
     return (
         <section id="workflow" className="py-24 bg-[#030712]">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="text-center max-w-2xl mx-auto mb-20 text-white">
-                    <h2 className="text-[32px] sm:text-[36px] font-bold tracking-tight">
+                <div className="text-center max-w-2xl mx-auto mb-20">
+                    <h2 className="text-[32px] sm:text-[36px] font-semibold tracking-tight text-[#F9FAFB]">
                         {t("Workflow", "title")}
                     </h2>
-                    <p className="mt-4 text-[#8B93A5] font-medium text-[15px] sm:text-base leading-relaxed">
+                    <p className="mt-4 text-[#99A1AF] font-medium text-[16px] sm:text-base leading-relaxed">
                         {t("Workflow", "description")}
                     </p>
                 </div>
@@ -75,7 +75,7 @@ export default function HowItWorks() {
                     {steps.map((step) => (
                         <div key={step.id} className="relative flex-1 flex flex-col items-center">
                             <div className="absolute top-5 left-0 w-full h-26 overflow-hidden pointer-events-none">
-                                <svg fill="none" className={`w-full h-[200%] ${step.strokeColor} opacity-50`} stroke="currentColor" strokeWidth="2" strokeDasharray="6 6">
+                                <svg fill="none" className={`w-full h-[120%] ${step.strokeColor} opacity-50`} stroke="currentColor" strokeWidth="2" strokeDasharray="6 6">
                                     <ellipse cx="50%" cy="100%" rx="50%" ry="100%" />
                                 </svg>
                             </div>
@@ -86,16 +86,16 @@ export default function HowItWorks() {
                             </div>
 
 
-                            <div className="relative z-10 mt-[80px] w-[26px] h-[26px] rounded-full bg-[#374151] flex items-center justify-center border-2 border-[#1E293B]">
-                                <span className="text-white text-[11px] font-bold">{step.id}</span>
+                            <div className="relative z-10 w-[26px] h-[26px] rounded-full bg-[#374151] flex items-center justify-center border-2 border-[#1E293B]">
+                                <span className="text-white text-[11px] font-semibold">{step.id}</span>
                             </div>
 
 
                             <div className="mt-5 flex flex-col items-center text-center">
-                                <h3 className="text-white font-bold text-[17px] tracking-wide mb-2">
+                                <h3 className="text-[#F9FAFB] font-semibold text-[20px] tracking-wide mb-2">
                                     {t("Workflow", step.titleKey)}
                                 </h3>
-                                <p className="text-[#8B93A5] text-[13px] leading-relaxed max-w-[160px]">
+                                <p className="text-[#99A1AF] text-[16px] leading-relaxed max-w-[160px]">
                                     {t("Workflow", step.descKey)}
                                 </p>
                             </div>
@@ -110,9 +110,9 @@ export default function HowItWorks() {
                                 {step.icon}
                             </div>
                             <div className="w-[26px] h-[26px] mb-4 rounded-full bg-[#374151] flex items-center justify-center border-2 border-[#1E293B]">
-                                <span className="text-white text-[11px] font-bold">{step.id}</span>
+                                <span className="text-white text-[11px] font-semibold">{step.id}</span>
                             </div>
-                            <h3 className="text-white font-bold text-lg mb-2">
+                            <h3 className="text-white font-semibold text-lg mb-2">
                                 {t("Workflow", step.titleKey)}
                             </h3>
                             <p className="text-[#8B93A5] text-sm max-w-[200px]">
