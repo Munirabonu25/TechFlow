@@ -1,7 +1,7 @@
 "use client";
 import { useLanguage } from "../context/LanguageContext";
 import Image from "next/image";
-
+import problemsection from "../../../public/problemsection.png";
 export default function Problems() {
     const { t } = useLanguage();
 
@@ -18,7 +18,7 @@ export default function Problems() {
                 </div>
 
                 <div className="hidden md:flex w-full mx-auto items-center justify-center mb-10">
-                    <Image width={1440} height={300} className="w-full h-auto object-contain" src="/problemspart.svg" alt="Illustration showing common business problems: repair order delays, inventory loss, and human errors" />
+                    <Image width={1440} height={300} className="w-full h-auto object-contain" src={problemsection} alt="Illustration showing common business problems: repair order delays, inventory loss, and human errors" />
                 </div>
 
                 <div className="grid md:grid-cols-3 gap-6 lg:text-center md:text-left sm:text-left">

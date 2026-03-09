@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { useLanguage, LOCALE_OPTIONS, Locale } from "../context/LanguageContext";
 import Image from "next/image";
+import logo from "../../../public/logo.svg";
 import globe from "../../../public/globus.svg";
 export default function Navbar() {
     const [mobileOpen, setMobileOpen] = useState(false);
@@ -21,7 +22,7 @@ export default function Navbar() {
                 <div className="flex items-center justify-between h-[72px]">
 
                     <Link href="/" className="flex items-center gap-2">
-                        <span className="text-[22px] font-medium text-[#030712] tracking-tight">TechFlow</span>
+                        <Image src={logo} alt="logo" width={150} height={50}/>
                     </Link>
 
 
