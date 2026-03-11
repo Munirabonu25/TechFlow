@@ -11,7 +11,7 @@ export default function CTA() {
     const features = [
         {
             icon: (
-                <Image src={samaradorlik} alt="Samaradorlik" width={28} height={28} />
+                <Image src={samaradorlik} alt="Samaradorlik" width={32} height={32} />
             ),
             titleKey: "opportunities",
             descKey: "opportunities_desc",
@@ -19,7 +19,7 @@ export default function CTA() {
         },
         {
             icon: (
-                <Image src={shieldCheck} alt="Shield Check" width={28} height={28} />
+                <Image src={shieldCheck} alt="Shield Check" width={32} height={32} />
             ),
             titleKey: "security",
             descKey: "security_desc",
@@ -27,7 +27,7 @@ export default function CTA() {
         },
         {
             icon: (
-                <Image src={mastablanish} alt="Mastablanish" width={24} height={24} />
+                <Image src={mastablanish} alt="Mastablanish" width={32} height={32} />
             ),
             titleKey: "scalability",
             descKey: "scalability_desc",
@@ -63,7 +63,7 @@ export default function CTA() {
                         </div>
                     </div>
 
-                    <div className="flex flex-col gap-4 md:ml-auto lg:ml-auto w-full lg:max-w-[292px] sm:min-w-[300px]">
+                    <div className="flex flex-col gap-[12px] md:ml-auto lg:ml-auto w-full lg:max-w-[292px] sm:min-w-[300px]">
                         {features.map((feature, index) => (
                             <div
                                 key={index}
@@ -73,10 +73,10 @@ export default function CTA() {
                                     {feature.icon}
                                 </div>
                                 <div className="flex flex-col">
-                                    <h3 className="text-[20px] font-semibold text-[#030712] leading-[24px] tracking-[-0.02em] ">
+                                    <h3 className="text-[20px] font-semibold text-[#030712] leading-[24px] tracking-[0.02em] ">
                                         {t("CTA", feature.titleKey)}
                                     </h3>
-                                    <p className="mt-1.5 text-[12px] text-[#4A5565] text-[#4A5565] leading-[16px] font-medium">
+                                    <p className="mt-[8px] text-[12px] text-[#4A5565] text-[#4A5565] leading-[16px] font-medium">
                                         {t("CTA", feature.descKey)}
                                     </p>
                                 </div>
