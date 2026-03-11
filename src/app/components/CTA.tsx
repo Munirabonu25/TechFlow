@@ -43,8 +43,12 @@ export default function CTA() {
                         <h2 className="text-[20px] md:text-[32px] max-w-[480px] tracking-[0.02em] sm:text-3xl lg:text-[32px] font-semibold text-[#030712] leading-[1.3] lg:leading-[42px]">
                             {t("CTA", "title")}
                         </h2>
-                        <p className="mt-[16px] text-[#1E2939] tracking-[0.02em] font-regular md:text-[14px] sm:text-base leading-[22px]">
+                        <p className="mt-[16px] text-[#1E2939] tracking-[0.02em] font-regular md:text-[14px] sm:text-base leading-[22px] hidden md:block">
                             {t("CTA", "description")}
+                        </p>
+
+                        <p className="mt-[16px] text-[#1E2939] tracking-[0.02em] font-regular text-base leading-[22px] md:hidden">
+                            {t("CTA", "descriptionMobile")}
                         </p>
 
                         <div className="mt-16 flex md:flex-row flex-col gap-5 sm:flex-col ">
