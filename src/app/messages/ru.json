@@ -1,9 +1,9 @@
 {
     "Navbar": {
         "problems": "Проблемы",
-        "solutions": "Решения",
+        "solutions": "Модули",
         "workflow": "Процесс",
-        "contact": "Контакты",
+        "contact": "Cвязь",
         "demo": "Запросить демо",
         "login": "Вход"
     },

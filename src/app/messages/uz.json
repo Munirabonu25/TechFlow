@@ -1,9 +1,9 @@
 {
     "Navbar": {
         "problems": "Muammolar",
-        "solutions": "Yechimlar",
+        "solutions": "Modullar",
         "workflow": "Jarayon",
-        "contact": "Aloqa",
+        "contact": "Bog'lanish",
         "demo": "Demo so'rash",
         "login": "Kirish"
     },
