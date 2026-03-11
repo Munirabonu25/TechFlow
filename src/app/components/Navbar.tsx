@@ -40,12 +40,12 @@ export default function Navbar() {
 
                     <div className="hidden lg:flex items-center gap-5">
                         <div className="relative">
-                           <Image src={globe} alt="globe" width={18} height={18} className="absolute left-2.5 top-1/2 -translate-y-1/2"/>
+                           <Image src={globe} alt="globe" width={20} height={20} className="absolute left-2.5 top-1/2 -translate-y-1/2"/>
                             <select
                                 id="desktop-language-select"
                                 value={locale}
                                 onChange={(e: React.ChangeEvent<HTMLSelectElement>) => setLocale(e.target.value as Locale)}
-                                className="appearance-none bg-[#F5F4F7] rounded-full pl-9 pr-8 py-2 text-sm font-medium text-[#030712] cursor-pointer focus:outline-none "
+                                className="appearance-none bg-[#F5F4F7] rounded-full pl-9 pr-7 py-2 text-[16px] font-medium text-[#030712] leading-[20px] cursor-pointer focus:outline-none "
                             >
                                 {LOCALE_OPTIONS.map((opt) => (
                                     <option key={opt.code} value={opt.code}>
