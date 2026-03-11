@@ -21,7 +21,7 @@ export default function Navbar() {
             <div className="max-w-[335px] md:max-w-[648px] lg:max-w-[1090px] mx-auto relative">
                 <div className="flex items-center justify-between h-[72px]">
 
-                    <Link href="/" className="flex items-center gap-2">
+                    <Link href="/" className="flex items-center gap-2 focus:outline-none">
                         <Image src={logo} alt="logo" width={250} height={100}/>
                     </Link>
 
