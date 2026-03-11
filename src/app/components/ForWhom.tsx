@@ -30,10 +30,10 @@ export default function ForWhom() {
         <section id="for-whom" className="py-[64px] md:py-[50px] lg:pb-[128px] bg-[radial-gradient(circle_at_bottom,_#1463E1_-90%,_#030712_30%)] bg-[#030712] ">
             <div className="max-w-[335px] md:max-w-[648px] lg:max-w-[1090px] mx-auto">
                 <div className="text-center max-w-2xl mx-auto mb-[36px]">
-                    <h2 className="text-[32px] sm:text-[32px] font-semibold text-[#F9FAFB] tracking-[-0.02em]">
+                    <h2 className="text-[32px] sm:text-[32px] font-semibold text-[#F9FAFB] tracking-[0.02em]">
                         {t("ForWhom", "title")}
                     </h2>
-                    <p className="mt-[16px] text-[#99A1AF] font-regular tracking-[0.02em] text-[16px] sm:text-base">
+                    <p className="mt-[14px] text-[#99A1AF] font-regular tracking-[0.02em] text-[16px] sm:text-base">
                         {t("ForWhom", "description")}
                     </p>
                 </div>
