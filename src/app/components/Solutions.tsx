@@ -184,14 +184,14 @@ const cardAnalitika = (
                 </div>
 
              
-                <div className="flex flex-col md:grid md:grid-cols-2 gap-[10px] lg:hidden">
-                    <div className="flex flex-col gap-[10px]">
+                <div className="flex flex-col md:grid md:grid-cols-2 gap-[20px] lg:hidden">
+                    <div className="flex flex-col gap-[20px]">
                         {cardService}
                         {cardPOS}
                         {cardOmbor}
                         {cardAnalitika}
                     </div>
-                    <div className="flex flex-col gap-[10px]">
+                    <div className="flex flex-col gap-[20px]">
                         {cardCRM}
                         {cardOnline}
                         {cardSavdo}
@@ -199,17 +199,17 @@ const cardAnalitika = (
                 </div>
 
                
-                <div className="hidden lg:flex flex-col gap-[10px]">
-                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-[10px]">
+                <div className="hidden lg:flex flex-col gap-[20px]">
+                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-[20px]">
                         <div className="lg:col-span-2">{cardService}</div>
                         <div className="lg:col-span-1">{cardCRM}</div>
                     </div>
-                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-[10px]">
-                        <div className="flex flex-col gap-[10px]">
+                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-[20px]">
+                        <div className="flex flex-col gap-[20px]">
                             {cardPOS}
                             {cardOmbor}
                         </div>
-                        <div className="flex flex-col gap-[10px]">
+                        <div className="flex flex-col gap-[20px]">
                             {cardAnalitika}
                             {cardSavdo}
                         </div>

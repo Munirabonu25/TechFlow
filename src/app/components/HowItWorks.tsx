@@ -26,7 +26,7 @@ export default function HowItWorks() {
             descKey: "step2_desc",
             strokeColor: "text-[#F33959]/70",
             icon: (
-                <Image src={howworks2} className="w-full h-full" alt="How It Works" width={28} height={28} />
+                <Image src={howworks2} className="w-full h-full object-cover" alt="How It Works" width={28} height={28} />
             ),
         },
         {
@@ -35,17 +35,16 @@ export default function HowItWorks() {
             descKey: "step3_desc",
             strokeColor: "text-green-500/70",
             icon: (
-                <Image src={howworks3} className="w-full h-full" alt="How It Works" width={28} height={28} />
+                <Image src={howworks3} className="w-full h-full object-cover" alt="How It Works" width={28} height={28} />
             ),
         },
-
         {
             id: "4",
             titleKey: "step4",
             descKey: "step4_desc",
             strokeColor: "text-yellow-400/70",
             icon: (
-                <Image src={howworks4} className="w-full h-full" alt="How It Works" width={28} height={28} />
+                <Image src={howworks4} className="w-full h-full object-cover" alt="How It Works" width={28} height={28} />
             ),
         },
         {
@@ -54,7 +53,7 @@ export default function HowItWorks() {
             descKey: "step5_desc",
             strokeColor: "text-blue-500/70",
             icon: (
-                <Image src={howworks5} className="w-full h-full" alt="How It Works" width={28} height={28} />
+                <Image src={howworks5} className="w-full h-full object-cover" alt="How It Works" width={28} height={28} />
             ),
         },
     ];
@@ -74,28 +73,32 @@ export default function HowItWorks() {
                 <div className="hidden lg:flex justify-between relative">
                     {steps.map((step) => (
                         <div key={step.id} className="relative flex-1 flex flex-col items-center">
-                            <div className="absolute top-5 left-0 w-full h-34 overflow-hidden pointer-events-none">
-                                <svg fill="none" className={`w-full h-[90%] ${step.strokeColor} opacity-50`} stroke="currentColor" strokeWidth="2" strokeDasharray="6 6">
-                                    <ellipse cx="50%" cy="100%" rx="50%" ry="100%" />
+                            
+                            <div className="absolute top-5 left-0 w-full h-30 overflow-hidden pointer-events-none">
+                                <svg fill="none" className={`w-full h-[85%] ${step.strokeColor}`} strokeWidth="1.3" strokeDasharray="6 6">
+                                    <defs>
+                                        <linearGradient id={`fadeGrad-${step.id}`} x1="0" y1="0" x2="0" y2="1">
+                                            <stop offset="0%" stopColor="currentColor" stopOpacity="0.8" />
+                                            <stop offset="100%" stopColor="currentColor" stopOpacity="0" />
+                                        </linearGradient>
+                                    </defs>
+                                    <ellipse cx="50%" cy="100%" rx="49%" ry="100%" stroke={`url(#fadeGrad-${step.id})`} />
                                 </svg>
                             </div>
 
-
-                            <div className={`relative z-10 w-15 h-15 rounded-xl flex items-center justify-center`}>
+                            <div className={`relative z-10 w-18 h-16 rounded-xl flex items-center justify-center`}>
                                 {step.icon}
                             </div>
 
-
-                            <div className="relative z-10 w-[26px] h-[26px] rounded-full bg-[#374151] flex items-center justify-center ">
-                                <span className="text-white text-[11px] font-semibold">{step.id}</span>
+                            <div className="relative z-10 w-[20px] h-[20px] rounded-full bg-[#374151] flex items-center justify-center ">
+                                <span className="text-white text-[12px] font-medium">{step.id}</span>
                             </div>
 
-
-                            <div className="mt-5 flex flex-col items-center text-center">
-                                <h3 className="text-[#F9FAFB] font-semibold text-[20px] tracking-wide mb-2">
+                            <div className="mt-[12px] flex flex-col items-center text-center">
+                                <h3 className="text-[#F9FAFB] font-semibold text-[20px] tracking-[0.02em] mb-[4px]">
                                     {t("Workflow", step.titleKey)}
                                 </h3>
-                                <p className="text-[#99A1AF] text-[16px] leading-[22px] tracking-[-0.02em] max-w-[160px]">
+                                <p className="text-[#99A1AF] text-[16px] leading-[22px] tracking-[0.02em] max-w-[160px]">
                                     {t("Workflow", step.descKey)}
                                 </p>
                             </div>
@@ -106,12 +109,20 @@ export default function HowItWorks() {
                 <div className="lg:hidden flex flex-col sm:grid sm:grid-cols-2 gap-16 sm:gap-10 relative items-center">
                     {steps.map((step) => (
                         <div key={step.id} className="relative flex flex-col items-center text-center w-full">
-                          
+                            
+                            {/* --- MOBILE SVG O'ZGARTIRILDI --- */}
                             <div className="absolute -top-1 left-1/2 -translate-x-1/2 w-[250px] h-[180px] overflow-hidden pointer-events-none sm:hidden">
-                                <svg fill="none" className={`w-full h-[100%] ${step.strokeColor} opacity-50`} stroke="currentColor" strokeWidth="2" strokeDasharray="6 6">
-                                    <ellipse cx="50%" cy="100%" rx="50%" ry="85%" />
+                                <svg fill="none" className={`w-full h-[100%] ${step.strokeColor}`} strokeWidth="2" strokeDasharray="6 6">
+                                    <defs>
+                                        <linearGradient id={`fadeGradMob-${step.id}`} x1="0" y1="0" x2="0" y2="1">
+                                            <stop offset="0%" stopColor="currentColor" stopOpacity="0.8" />
+                                            <stop offset="100%" stopColor="currentColor" stopOpacity="0" />
+                                        </linearGradient>
+                                    </defs>
+                                    <ellipse cx="50%" cy="100%" rx="50%" ry="85%" stroke={`url(#fadeGradMob-${step.id})`} />
                                 </svg>
                             </div>
+                            {/* ---------------------------------- */}
 
                             <div className={`relative z-10 w-14 h-14 rounded-2xl flex items-center justify-center mb-6`}>
                                 {step.icon}
