@@ -26,7 +26,7 @@ export default function Navbar() {
                     </Link>
 
 
-                    <div className="hidden lg:flex items-center gap-8 bg-white border border-[#D1D5DC] px-[32px] py-[14px] rounded-full absolute left-1/2 -translate-x-1/2">
+                    <div className="hidden lg:flex items-center gap-8 bg-white border border-[#D1D5DC] px-[34px] py-[14px] rounded-full absolute left-1/2 -translate-x-1/2">
                         {navItems.map((item) => (
                             <Link
                                 key={item.id}
