@@ -19,7 +19,7 @@ export default function Solutions() {
         >
             <div className="relative z-20 max-w-sm">
                 <h3 className="text-[20px] font-semibold text-[#030712] mb-[8px]">{t("Solutions", "solution1")}</h3>
-                <p className="text-[#364153] font-regular text-[16px] leading-[22px] tracking-[0.02em]">
+                <p className="text-[#364153] font-regular text-[16px] leading-[22px] tracking-[0.02em] ">
                     {t("Solutions", "solution1_desc")}
                 </p>
             </div>
@@ -108,7 +108,7 @@ export default function Solutions() {
                 <h3 className="text-[20px] font-semibold text-[#030712] mb-[8px]">
                     {t("Solutions", "solution4")}
                 </h3>
-                <p className="text-[#364153] lg:text-nowrap font-regular text-[16px] leading-[22px] tracking-[0.02em] max-w-[80%]">
+                <p className="text-[#364153] lg:text-nowrap truncate font-regular text-[16px] leading-[22px] tracking-[0.02em] max-w-[80%]">
                     {t("Solutions", "solution4_desc")}
                 </p>
             </div>

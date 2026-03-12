@@ -29,7 +29,7 @@ export default function Hero() {
             {t("Hero", "description")}
           </p>  
 
-          <div className="mt-[20px] md:mt-[50px] flex md:flex-row flex-col gap-[10px] sm:flex-col ">
+          <div className="mt-[20px] md:mt-[50px] items-center flex md:flex-row flex-col gap-[10px] sm:flex-col ">
             <Link
               href="#"
               className="bg-[#1463E1] text-center text-white px-[28px] py-[13px] rounded-[32px] font-medium leading-[20px]"
