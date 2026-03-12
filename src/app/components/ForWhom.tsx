@@ -1,9 +1,10 @@
 "use client";
-import ImageWithSkeleton from "./ImageSkeleton";
+import Image from "next/image";
 import image1 from "../../../public/Rectangle.svg";
 import image2 from "../../../public/Rectangle2.svg";
 import image3 from "../../../public/Rectangle3.svg";
 import { useLanguage } from "../context/LanguageContext";
+
 
 export default function ForWhom() {
     const { t } = useLanguage();
@@ -46,7 +47,7 @@ export default function ForWhom() {
                         >
 
                             <div className="w-full relative rounded-[16px] overflow-hidden aspect-[16/10] mb-[20px]">
-                                <ImageWithSkeleton
+                                <Image
                                     src={image}
                                     alt={t("ForWhom", titleKey)}
                                     className="w-full h-full object-cover"

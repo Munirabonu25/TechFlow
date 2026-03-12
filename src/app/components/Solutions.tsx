@@ -1,5 +1,5 @@
 "use client";
-import ImageWithSkeleton from "./ImageSkeleton";
+import Image from "next/image";
 import solution1 from "../../../public/solutionfirstimg.svg";
 import solution2 from "../../../public/solutionsecondimg.svg";
 import solution3 from "../../../public/solutionthirdimg.svg";
@@ -24,7 +24,7 @@ export default function Solutions() {
                 </p>
             </div>
             <div className="mt-8 lg:mt-0 lg:absolute lg:right-0 lg:bottom-0 lg:top-6 w-full lg:w-[65%] flex items-end justify-end pointer-events-none relative z-10">
-                <ImageWithSkeleton
+                <Image
                     src={solution1}
                     alt={t("Solutions", "solution1")}
                     className="object-contain object-right-bottom max-w-full h-auto"
@@ -46,7 +46,7 @@ export default function Solutions() {
                 </p>
             </div>
             <div className="mt-4 lg:mt-0 lg:absolute lg:right-0 lg:bottom-0 lg:top-6 w-full lg:w-[65%] flex items-end justify-end pointer-events-none relative z-10">
-                <ImageWithSkeleton
+                <Image
                     src={solution2}
                     alt={t("Solutions", "solution2")}
                     className="object-contain w-[84%]"
@@ -68,7 +68,7 @@ export default function Solutions() {
                 </p>
             </div>
             <div className="mt-auto flex relative justify-center pointer-events-none px-4 -mb-4 z-10">
-                <ImageWithSkeleton
+                <Image
                     src={solution3}
                     alt={t("Solutions", "solution3")}
                     className="object-contain max-h-[220px]"
@@ -90,7 +90,7 @@ export default function Solutions() {
                 </p>
             </div>
             <div className="mt-auto absolute bottom-0 right-0 w-full flex justify-end pointer-events-none z-10">
-                <ImageWithSkeleton
+                <Image
                     src={solution5}
                     alt={t("Solutions", "solution6")}
                     className="object-contain w-[43%]"
@@ -115,7 +115,7 @@ export default function Solutions() {
 
 
             <div className="absolute inset-x-0 bottom-0 lg:left-28 left-0 md:left-16 flex justify-center items-end h-[120px] pointer-events-none">
-                <ImageWithSkeleton
+                <Image
                     src={solution4}
                     alt={t("Solutions", "solution4")}
                     className="object-contain w-full h-full object-bottom"
@@ -139,7 +139,7 @@ export default function Solutions() {
                 </p>
             </div>
             <div className="mt-auto absolute bottom-0 right-0 left-0 flex justify-center pointer-events-none z-10">
-                <ImageWithSkeleton
+                <Image
                     src={solution6}
                     alt={t("Solutions", "solution7")}
                     className="object-contain w-[85%] rounded-b-[28px]"
@@ -161,7 +161,7 @@ export default function Solutions() {
                 </p>
             </div>
             <div className="mt-auto absolute bottom-2 left-0 p-[32px] right-0 flex justify-center items-end pointer-events-none -mx-4 z-10">
-                <ImageWithSkeleton
+                <Image
                     src={solution7}
                     alt={t("Solutions", "solution5")}
                     className="object-contain w-[150%] sm:w-[120%] md:w-[100%] max-w-none"
