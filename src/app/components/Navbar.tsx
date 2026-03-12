@@ -20,7 +20,7 @@ export default function Navbar() {
 
     return (
         <nav className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-[#F9FAFB] pt-[] to-[#F5F4F7]">
-            <div className="max-w-[380px] md:max-w-[648px] lg:max-w-[1090px] mx-auto relative">
+            <div className="max-w-[380px] px-[20px] md:px-0 md:max-w-[648px] lg:max-w-[1090px] mx-auto relative">
                 <div className="flex items-center justify-between h-[72px]">
 
                     <Link href="/" className="flex items-center gap-2 focus:outline-none">

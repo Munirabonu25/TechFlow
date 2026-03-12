@@ -7,7 +7,7 @@ export default function Problems() {
 
     return (
         <section id="problems" className="pt-16 md:pt-12 lg:pt-[64px] bg-white overflow-hidden">
-            <div className="max-w-[380px] md:max-w-[648px] lg:max-w-[1090px] mx-auto">
+            <div className="max-w-[380px] px-[20px] md:px-0 md:max-w-[648px] lg:max-w-[1090px] mx-auto">
                 <div className="text-center mb-8 md:mb-8 lg:mb-12">
                     <h2 className="text-[32px] font-semibold text-[#030712]">
                         {t("Problems", "title")}

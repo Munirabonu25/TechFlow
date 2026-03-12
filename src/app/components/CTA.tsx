@@ -40,7 +40,7 @@ export default function CTA() {
 
     return (
         <section id="contact" className="my-[60px] md:my-[80px] lg:mt-[64px] lg:mb-[80px] bg-white">
-            <div className="max-w-[335px] md:max-w-[648px] lg:max-w-[1090px] mx-auto ">
+            <div className="max-w-[380px] px-[20px] md:px-0 md:max-w-[648px] lg:max-w-[1090px] mx-auto ">
                 <div className="bg-[#F9FAFB] mb-4 text-center md:text-left lg:text-left rounded-[16px] p-6 lg:p-8 grid lg:grid-cols-2 gap-12 lg:gap-2 items-center">
                     <div>
                         <h2 className="text-[20px] md:text-[32px] max-w-[480px] tracking-[0.02em] sm:text-3xl lg:text-[32px] font-semibold text-[#030712] leading-[1.3] lg:leading-[42px]">

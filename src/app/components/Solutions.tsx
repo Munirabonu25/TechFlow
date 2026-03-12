@@ -173,7 +173,7 @@ export default function Solutions() {
 
     return (
         <section id="solutions" className="py-[60px] md:py-[50px] lg:py-[128px] bg-white">
-            <div className="max-w-[335px] md:max-w-[648px] lg:max-w-[1090px] mx-auto">
+            <div className="max-w-[380px] px-[20px] md:px-0 md:max-w-[648px] lg:max-w-[1090px] mx-auto">
                 <div className="text-center max-w-3xl mx-auto mb-[36px]">
                     <h2 className="text-[32px] font-semibold text-[#030712] tracking-[0.02em] leading-[22px">
                         {t("Solutions", "title")}
