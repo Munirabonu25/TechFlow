@@ -8,10 +8,10 @@ export default function Hero() {
   const isRu = locale === "ru";
 
   return (
-    <section className="w-full sm:min-h-[600px] md:h-screen lg:h-screen bg-gradient-to-r from-[#F9FAFB] to-[#F5F4F7]">
-      <div className="mx-auto relative h-full md:pl-[60px] md:pt-[14px] lg:pl-[215px] lg:pt-[50px] flex flex-col">
+    <section className="w-full sm:min-h-[600px] md:h-[530px] lg:h-screen bg-gradient-to-r from-[#F9FAFB] to-[#F5F4F7]">
+      <div className="mx-auto relative h-full md:pl-[68px] md:pt-[84px] lg:pl-[215px] lg:pt-[50px] flex flex-col">
         <div className="relative  sm:text-wrap  z-10  md:max-w-[1320px] lg:max-w-[620px] max-w-[335px] mx-auto md:mx-0 ">
-          <h1 className="text-[24px] md:text-[20px] leading-[30px] md:leading:[18px] lg:leading-[46px] lg:text-[32px] mt-[110px] md:mt-[20px] lg:mt-[70px] text-center md:text-left lg:text-left font-semibold text-[#030712]">
+          <h1 className="text-[24px] md:text-[20px] leading-[30px] md:leading:[18px] lg:leading-[42px] lg:text-[32px] mt-[110px] md:mt-[20px] tracking-[0.02em] lg:mt-[70px] text-center md:text-left lg:text-left font-semibold text-[#030712] md:max-w-[410px] lg:max-w-[600px] ">
             {isRu ? (
               <>
                 <span className="text-[#1463E1]">{t("Hero", "title_highlight")}</span>
@@ -25,7 +25,7 @@ export default function Hero() {
             )}
           </h1>
 
-          <p className="mt-[12px] lg:mt-6 max-w-[450px] text-[16px] md:text-[14px] lg:text-[16px] text-center md:text-left lg:text-left text-[#1E2939]">
+          <p className="mt-[12px] lg:mt-6 md:max-w-[418px] lg:max-w-[500px] text-[16px] md:text-[14px] lg:text-[16px] tracking-[0.02em] text-center md:text-left font-regular lg:text-left text-[#1E2939]">
             {t("Hero", "description")}
           </p>  
 
@@ -53,9 +53,9 @@ export default function Hero() {
             loop
             muted
             playsInline
-            className="w-full md:absolute max-w-[1050px] object-contain"
+            className="w-full md:absolute max-w-[1080px] object-contain"
           />
-          <div className="absolute bottom-0 right-0 ">
+          <div className="absolute bottom-0 md:left-[-60px] lg:left-[120px] lg:right-0 ">
             <Image src={border} alt="border" />
           </div>
         </div>
