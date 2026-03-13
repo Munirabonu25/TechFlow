@@ -39,7 +39,7 @@ export default function CTA() {
     ];
 
     return (
-        <section id="contact" className="my-[60px] md:my-[80px] lg:mt-[64px] lg:mb-[80px] bg-white">
+        <section id="contact" className=" lg:my-[60px] md:my-[50px] lg:mt-[64px] lg:mb-[80px] bg-white">
             <div className="max-w-[380px] px-[6px] md:px-0 md:max-w-[648px] lg:max-w-[1090px] mx-auto ">
                 <div className="bg-[#F9FAFB] mb-4 text-center md:text-left lg:text-left rounded-[16px] md:rounded-[24px] lg:rounded-[16px] p-6 md:p-8 lg:p-8 grid md:grid-cols-2 lg:grid-cols-2 gap-8 md:gap-4 lg:gap-2 items-center">
                     <div>
