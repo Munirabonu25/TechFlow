@@ -71,7 +71,7 @@ export default function Navbar() {
                         </div>
                         <button
                             onClick={() => setIsDemoModalOpen(true)}
-                            className="text-sm font-medium text-white bg-[#1463E1] cursor-pointer hover:bg-blue-700 px-6 py-2.5 rounded-full transition-colors"
+                            className="text-sm font-medium text-white bg-[#1463E1] cursor-pointer px-[28px] md:px-[16px] lg:px-[28px] py-[13px] md:py-[10px] lg:py-[13px] rounded-[32px] text-[16px] md:text-[14px] lg:text-[16px] text-nowrap leading-[20px] font-medium text-white bg-[#1463E1]"
                         >
                             {t("Navbar", "demo")}
                         </button>

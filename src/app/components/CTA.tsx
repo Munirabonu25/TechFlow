@@ -39,7 +39,7 @@ export default function CTA() {
     ];
 
     return (
-        <section id="contact" className=" lg:my-[60px] md:my-[50px] lg:mt-[64px] lg:mb-[80px] bg-white">
+        <section id="contact" className="mt-[60px] lg:my-[60px] md:my-[50px] lg:mt-[64px] lg:mb-[80px] bg-white">
             <div className="max-w-[380px] px-[6px] md:px-0 md:max-w-[648px] lg:max-w-[1090px] mx-auto ">
                 <div className="bg-[#F9FAFB] mb-4 text-center md:text-left lg:text-left rounded-[16px] md:rounded-[24px] lg:rounded-[16px] p-6 md:p-8 lg:p-8 grid md:grid-cols-2 lg:grid-cols-2 gap-8 md:gap-4 lg:gap-2 items-center">
                     <div>
@@ -57,13 +57,13 @@ export default function CTA() {
                         <div className="mt-8 md:mt-10 lg:mt-16 flex flex-col md:flex-row gap-4 md:gap-2 lg:gap-5">
                             <button
                                 onClick={() => setModalMode("demo")}
-                                className="inline-flex md:hidden lg:inline-flex cursor-pointer items-center justify-center px-[28px] md:px-[16px] lg:px-[28px] py-[13px] md:py-[10px] lg:py-[13px] rounded-[32px] text-[16px] md:text-[14px] lg:text-[16px] text-nowrap leading-[20px] font-medium text-white bg-[#1463E1]"
+                                className="hidden lg:inline-flex cursor-pointer items-center justify-center px-[28px] md:px-[16px] lg:px-[28px] py-[13px] md:py-[10px] lg:py-[13px] rounded-[32px] text-[16px] md:text-[14px] lg:text-[16px] text-nowrap leading-[20px] font-medium text-white bg-[#1463E1]"
                             >
                                 {t("CTA", "button1")}
                             </button>
                             <button
                                 onClick={() => setModalMode("demo")}
-                                className="hidden md:inline-flex lg:hidden cursor-pointer items-center justify-center px-[28px] md:px-[16px] lg:px-[28px] py-[13px] md:py-[10px] lg:py-[13px] rounded-[32px] text-[16px] md:text-[14px] lg:text-[16px] text-nowrap leading-[20px] font-medium text-white bg-[#1463E1]"
+                                className="md:inline-flex lg:hidden cursor-pointer items-center justify-center px-[28px] md:px-[16px] lg:px-[28px] py-[13px] md:py-[10px] lg:py-[13px] rounded-[32px] text-[16px] md:text-[14px] lg:text-[16px] text-nowrap leading-[20px] font-medium text-white bg-[#1463E1]"
                             >
                                 {t("CTA", "buttonlaptop1")}
                             </button>
