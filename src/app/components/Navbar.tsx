@@ -20,7 +20,7 @@ export default function Navbar() {
 
     return (
         <nav className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-[#F9FAFB] pt-[] to-[#F5F4F7]">
-            <div className="max-w-[380px] px-[6px] md:max-w-[768px] md:px-[60px] lg:max-w-[1440px] lg:px-[175px] mx-auto relative">
+            <div className="max-w-[380px] px-[6px] md:max-w-[768px] md:px-[60px] lg:px-0 lg:max-w-[1090px] mx-auto relative">
                 <div className="flex items-center justify-between h-[72px]">
 
                     <Link href="/" className="flex items-center gap-2 focus:outline-none">
@@ -100,54 +100,70 @@ export default function Navbar() {
                     </div>
                 </div>
 
-                {mobileOpen && (
-                    <div className="lg:hidden absolute top-[76px] right-4 sm:right-6 w-[253px] bg-white h-[414px] rounded-[8px] shadow-[0_8px_30px_rgb(0,0,0,0.12)] overflow-hidden flex flex-col">
+               {mobileOpen && (
 
-                        <div className="flex flex-col px-4">
-                            {navItems.map((item) => (
-                                <Link
-                                    key={item.id}
-                                    href={`#${item.id}`}
-                                    className="block py-4 text-center text-[14px] font-medium text-[#0F172A] hover:text-[#1463E1] border-b border-gray-200"
-                                    onClick={() => setMobileOpen(false)}
-                                >
-                                    {t("Navbar", item.nameKey)}
-                                </Link>
-                            ))}
+  <div
+    className="
+    lg:hidden 
+    absolute top-[76px] right-4 sm:right-6
+    w-[253px] h-[414px]
+    md:w-[334px] md:h-[328px]
+    bg-white rounded-[8px]
+    shadow-[0_8px_30px_rgb(0,0,0,0.12)]
+    overflow-hidden flex flex-col
+    "
+  >
+    <div className="flex flex-col px-4">
 
 
-                            <div className="flex justify-between items-center py-[24px] border-b border-gray-200">
-                                {LOCALE_OPTIONS.map((opt) => (
-                                    <button
-                                        key={opt.code}
-                                        onClick={() => {
-                                            setLocale(opt.code);
-                                            setMobileOpen(false);
-                                        }}
-                                        className={`flex-1 mx-1 p-[13px] rounded-md text-[14px] font-medium transition ${locale === opt.code
-                                            ? "bg-[#1463E1] text-white"
-                                            : "bg-transparent text-[#0F172A] hover:bg-gray-200"
-                                            }`}
-                                    >
-                                        {opt.shortLabel}
-                                    </button>
-                                ))}
-                            </div>
-                        </div>
+  {navItems.map((item) => (
+    <Link
+      key={item.id}
+      href={`#${item.id}`}
+      className="block py-4 text-center text-[14px] font-medium text-[#0F172A] hover:text-[#1463E1] border-b border-gray-200"
+      onClick={() => setMobileOpen(false)}
+    >
+      {t("Navbar", item.nameKey)}
+    </Link>
+  ))}
 
-                        <div className="flex justify-center py-[24px] items-center">
-                            <button
-                                onClick={() => {
-                                    setIsDemoModalOpen(true);
-                                    setMobileOpen(false);
-                                }}
-                                className="text-sm font-medium text-white flex items-center justify-center bg-[#1463E1] hover:bg-blue-700 w-[205px] h-[42px] rounded-full transition-colors"
-                            >
-                                {t("Navbar", "demo")}
-                            </button>
-                        </div>
-                    </div>
-                )}
+  <div className="flex justify-between items-center py-[28px] border-b border-gray-200 md:border-none">
+    {LOCALE_OPTIONS.map((opt) => (
+      <button
+        key={opt.code}
+        onClick={() => {
+          setLocale(opt.code);
+          setMobileOpen(false);
+        }}
+        className={`flex-1 mx-1 p-[13px] rounded-md text-[14px] font-medium transition ${
+          locale === opt.code
+            ? "bg-[#1463E1] text-white"
+            : "bg-transparent text-[#0F172A] hover:bg-gray-200"
+        }`}
+      >
+        {opt.shortLabel}
+      </button>
+    ))}
+  </div>
+</div>
+
+
+<div className="flex md:hidden justify-center py-[24px] items-center">
+  <button
+    onClick={() => {
+      setIsDemoModalOpen(true);
+      setMobileOpen(false);
+    }}
+    className="text-sm font-medium text-white flex items-center justify-center bg-[#1463E1] hover:bg-blue-700 w-[205px] h-[42px] rounded-full transition-colors"
+  >
+    {t("Navbar", "demo")}
+  </button>
+</div>
+
+
+  </div>
+)}
+
                 <DemoModal isOpen={isDemoModalOpen} onClose={() => setIsDemoModalOpen(false)} />
             </div>
         </nav>
