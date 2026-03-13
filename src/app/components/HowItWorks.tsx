@@ -70,12 +70,12 @@ export default function HowItWorks() {
                     </p>
                 </div>
 
-                <div className="hidden lg:flex justify-between relative">
+                <div className="hidden md:flex justify-between relative">
                     {steps.map((step) => (
                         <div key={step.id} className="relative flex-1 flex flex-col items-center">
 
                             <div className="absolute top-5 left-0 w-full h-32 overflow-hidden pointer-events-none">
-                                <svg fill="none" className={`w-full h-[85%] ${step.strokeColor}`} strokeWidth="1.3" strokeDasharray="6 6">
+                                <svg fill="none" className={`w-full md:h-[45%] lg:h-[85%] ${step.strokeColor}`} strokeWidth="1.3" strokeDasharray="6 6">
                                     <defs>
                                         <linearGradient id={`fadeGrad-${step.id}`} x1="0" y1="0" x2="0" y2="1">
                                             <stop offset="0%" stopColor="currentColor" stopOpacity="0.9" />
@@ -95,10 +95,10 @@ export default function HowItWorks() {
                             </div>
 
                             <div className="mt-[12px] flex flex-col items-center text-center">
-                                <h3 className="text-[#F9FAFB] font-semibold text-[20px] tracking-[0.02em] mb-[4px]">
+                                <h3 className="text-[#F9FAFB] font-semibold md:text-[14px] lg:text-[20px] tracking-[0.02em] mb-[4px]">
                                     {t("Workflow", step.titleKey)}
                                 </h3>
-                                <p className="text-[#99A1AF] text-[16px] leading-[22px] tracking-[0.02em] max-w-[160px]">
+                                <p className="text-[#99A1AF] md:text-[12px] lg:text-[16px] md:leading-[16px] lg:leading-[22px] tracking-[0.02em] max-w-[160px]">
                                     {t("Workflow", step.descKey)}
                                 </p>
                             </div>
@@ -106,13 +106,13 @@ export default function HowItWorks() {
                     ))}
                 </div>
 
-                <div className="lg:hidden flex flex-col sm:grid sm:grid-cols-2 gap-16 sm:gap-10 relative items-center">
+                <div className="md:hidden flex flex-col sm:grid sm:grid-cols-2 gap-16 sm:gap-10 relative items-center">
                     {steps.map((step) => (
                         <div key={step.id} className="relative flex flex-col items-center text-center w-full">
 
 
                             <div className="absolute -top-1 left-1/2 -translate-x-1/2 w-[250px] h-[180px] overflow-hidden pointer-events-none sm:hidden">
-                                <svg fill="none" className={`w-full h-[100%] ${step.strokeColor}`} strokeWidth="2" strokeDasharray="6 6">
+                                <svg fill="none" className={`w-full h-[90%] ${step.strokeColor}`} strokeWidth="2" strokeDasharray="6 6">
                                     <defs>
                                         <linearGradient id={`fadeGradMob-${step.id}`} x1="0" y1="0" x2="0" y2="1">
                                             <stop offset="0%" stopColor="currentColor" stopOpacity="0.8" />
@@ -124,7 +124,7 @@ export default function HowItWorks() {
                             </div>
 
 
-                            <div className={`relative z-10 w-14 h-14 rounded-2xl flex items-center justify-center mb-2`}>
+                            <div className={`relative z-10 w-17 h-17 rounded-2xl flex items-center justify-center mb-2`}>
                                 {step.icon}
                             </div>
                             <div className="relative z-10 w-[26px] h-[26px] rounded-full bg-[#374151] flex items-center justify-center">
