@@ -12,7 +12,7 @@ export default function Hero() {
 
   return (
     <section className="w-full sm:min-h-[600px] md:h-[530px] lg:h-[700px] bg-gradient-to-r from-[#F9FAFB] to-[#F5F4F7]">
-      <div className="mx-auto relative h-full md:pt-[84px] lg:pl-[25px]  max-w-[1440px]  flex flex-col">
+      <div className="mx-auto relative h-full md:pt-[84px] lg:pl-[175px]  max-w-[1440px]  flex flex-col">
         <div className="relative px-[20px] md:px-0 sm:text-wrap z-10">
           <h1 className="text-[24px] md:text-[20px] lg:text-[32px] leading-[30px] md:leading:[18px] lg:leading-[42px] mt-[110px] md:mt-[20px] tracking-[0.02em] lg:mt-[70px] text-center md:text-left lg:text-left font-semibold text-[#030712] lg:w-[600px] ">
             {isRu ? (
@@ -28,11 +28,11 @@ export default function Hero() {
             )}
           </h1>
 
-          <p className="mt-[12px] lg:mt-6 md:max-w-[418px] lg:max-w-[500px] text-[16px] md:text-[14px] lg:text-[16px] tracking-[0.02em] text-center md:text-left font-regular lg:text-left text-[#1E2939]">
+          <p className="mt-[12px] lg:mt-4 md:max-w-[418px] lg:max-w-[500px] text-[16px] md:text-[14px] lg:text-[16px] tracking-[0.02em] text-center md:text-left font-regular lg:text-left text-[#1E2939]">
             {t("Hero", "description")}
           </p>
 
-          <div className="mt-[20px] md:mt-[50px] items-center flex md:flex-row flex-col gap-[10px] sm:flex-col ">
+          <div className="mt-[20px] md:mt-[36px] items-center flex md:flex-row flex-col gap-[20px] sm:flex-col ">
             <button
               onClick={() => setModalMode("demo")}
               className="bg-[#1463E1] w-full md:w-[226px] text-nowrap cursor-pointer text-center text-white px-[28px] py-[13px] rounded-[32px] font-medium leading-[20px]"

@@ -21,19 +21,20 @@ export default function Navbar() {
     return (
         <nav className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-[#F9FAFB] to-[#F5F4F7]">
             <div className="container mx-auto relative">
-                <div className="flex items-center justify-between h-[72px]">
+                <div className="flex items-center justify-between py-6">
 
                     <Link href="/" className="flex items-center gap-2 focus:outline-none">
-                        <Image src={logo} alt="logo" width={250} height={100} className="w-[200px] h-[100px]" />
+                        <Image src={logo} alt="logo"  className="w-[237px] " />
                     </Link>
 
 
-                    <div className="hidden lg:flex items-center gap-8 bg-white px-[34px] py-[10px] rounded-full absolute left-1/2 -translate-x-1/2 border border-[#D1D5DC] rounded-[32px] p-4">
+                    <div className="hidden lg:flex items-center gap-[47px] px-[32px] py-[15px] rounded-full absolute left-1/2 -translate-x-1/2 border-[1px] border-[#D1D5DC] rounded-[32px] shadow-[0px 1px 2px 0px #00000021]">
                         {navItems.map((item) => (
                             <Link
                                 key={item.id}
                                 href={`#${item.id}`}
                                 className="text-[14px] hover:text-[#364153] text-[#030712] font-medium"
+                                style={{lineHeight:'16px'}}
                             >
                                 {t("Navbar", item.nameKey)}
                             </Link>
